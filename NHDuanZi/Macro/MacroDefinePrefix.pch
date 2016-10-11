@@ -1,0 +1,58 @@
+//
+//  MacroDefinePrefix.pch
+//  iComico
+//
+//  Created by ane_it_ios on 16/8/17.
+//  Copyright © 2016年 ane_it_ssk. All rights reserved.
+//
+#ifndef MacroDefinePrefix_pch
+#define MacroDefinePrefix_pch
+//-----*****第三方库头文件*****-----
+
+//#import "MBProgressHUD.h"   //菊花提示
+//#import "MBProgressHUD+NJ.h"
+//#import "AFNetworking.h"
+//#import "Masonry.h"
+//#import "UIView+JFFrame.h" //Frame的类别 View
+//#import "UIImageView+WebCache.h"
+
+
+
+//-----*****工具类头文件*****-----
+#import "MyLog.h"
+
+
+
+
+
+//-----*****宏定义*****-----
+
+#define kScreenWidth  CGRectGetWidth([[UIScreen mainScreen] bounds]) //屏幕宽
+#define kScreenHeight CGRectGetHeight([[UIScreen mainScreen] bounds])//屏幕高
+
+#define kHeaderHeight  kScreenWidth/375.0 * 235.0
+
+
+/***  普通字体 */
+#define kFont(size) [UIFont systemFontOfSize:size]
+
+
+
+
+//设置颜色
+#define UIColorFromRGB(rgbValue) \
+[UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 \
+alpha:1.0]
+
+
+
+
+
+
+
+
+
+
+#endif /* MacroDefinePrefix_pch */

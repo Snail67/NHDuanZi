@@ -1,0 +1,15 @@
+
+
+platform :ios, '8.0'
+
+target ’NHDuanZi’ do
+
+pod 'MJRefresh'
+pod 'AFNetworking'
+pod 'Masonry'
+pod 'SDWebImage'
+pod 'MJExtension'
+pod 'YYText'
+pod 'YYWebImage'
+pod 'MBProgressHUD'
+end
